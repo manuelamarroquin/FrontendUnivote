@@ -24,7 +24,9 @@ import Mi_perfil_admin from "./pages/Mi_perfil_admin";
 import MiPerfilVotante  from "./pages/MiPerfilVotante";
 import ResultadosVotante from "./pages/ResultadosVotante";
 import Propuestas from "./pages/Propuestas";
-
+import Inf_votante from "./pages/Inf_votante";
+import Inf_candidato from "./pages/Inf_candidato";
+import Registro_candidato from "./pages/Registro_candidato";
 
 
 
@@ -54,7 +56,9 @@ export default function App() {
           <Route path="/MiPerfilVotante" element={<MiPerfilVotante />} />
           <Route path="/ResultadosVotante" element={<ResultadosVotante />} />
           <Route path="/Propuestas/:id" element={<Propuestas />} />
-
+          <Route path="/Inf_votante" element={<Inf_votante/>} />
+          <Route path="/Inf_candidato" element={<Inf_candidato/>} />
+          <Route path="/Registro_candidato" element={<Registro_candidato/>} />
           
         </Routes>
       </div>
