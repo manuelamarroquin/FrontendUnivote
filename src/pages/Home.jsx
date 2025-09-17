@@ -33,7 +33,7 @@ export default function Home() {
           {/* Cuadro de Inscripción de Votante */}
           <a
             href="/Inf_votante"
-            className="flex flex-col items-center justify-center p-12 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+            className="flex flex-col items-center justify-center p-12 bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
           >
             <FaUser className="text-blue-900 w-20 h-20 mb-6" />
             <h5 className="text-2xl font-bold text-blue-900 leading-tight text-center">
@@ -45,7 +45,7 @@ export default function Home() {
           {/* Cuadro de Inscripción de Candidatos */}
           <a
             href="/Inf_candidato"
-            className="flex flex-col items-center justify-center p-12 bg-white rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300"
+            className="flex flex-col items-center justify-center p-12 bg-white rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
           >
             <FaUserTie className="text-blue-900 w-20 h-20 mb-6" />
             <h5 className="text-2xl font-bold text-blue-900 leading-tight text-center">
@@ -83,7 +83,7 @@ export default function Home() {
 
       {/* VISIÓN Y MISIÓN */}
       <section className="w-full mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
-        <div className="bg-blue-200 p-6 rounded-md">
+        <div id="vision" className="bg-gradient-to-br from-blue-100 to-blue-200 p-6 rounded-md shadow-xl transform transition-all duration-300 hover:scale-105">
           <h3 className="text-2xl font-semibold mb-3 text-center">Visión</h3>
           <p className="text-sm text-gray-700 text-justify">
             Ser la plataforma líder en votaciones electrónicas universitarias a nivel nacional e internacional,
@@ -92,7 +92,7 @@ export default function Home() {
           </p>
         </div>
 
-        <div className="bg-gray-100 p-6 rounded-md">
+        <div id="mision" className="bg-gradient-to-br from-gray-100 to-gray-200 p-6 rounded-md shadow-xl transform transition-all duration-300 hover:scale-105">
           <h3 className="text-2xl font-semibold mb-3 text-center">Misión</h3>
           <p className="text-sm text-gray-700 text-justify">
             Facilitar un proceso electoral universitario seguro, transparente y accesible, integrando tecnologías modernas
@@ -159,7 +159,7 @@ export default function Home() {
         </a>
       </section>
 
-
+      <Footer />
     </div>
   );
 }

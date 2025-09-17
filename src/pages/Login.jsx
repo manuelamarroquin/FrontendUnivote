@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from 'react-router-dom';
 
 export default function Login() {
     const [email, setEmail] = useState("");
@@ -27,9 +28,11 @@ export default function Login() {
         <div className="min-h-screen bg-blue-900 flex items-center justify-center px-4">
             <div className="bg-white shadow-xl rounded-2xl w-full max-w-sm p-8">
                 {/* Logo */}
+                <Link to="/">
                 <div className="flex justify-center mb-4">
                     <img src="/img/logo.png" alt="Univote" className="w-40 h-40" />
                 </div>
+                </Link>
 
                 <h1 className="text-2xl font-bold text-center mb-6 text-gray-800">
                     Iniciar Sesión

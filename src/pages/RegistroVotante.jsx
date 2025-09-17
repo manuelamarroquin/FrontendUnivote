@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from 'react-router-dom';
 
 export default function RegistroVotante() {
   const [formData, setFormData] = useState({
@@ -24,6 +25,7 @@ export default function RegistroVotante() {
     <div className="min-h-screen flex items-center justify-center bg-blue-900">
       <div className="bg-white shadow-xl rounded-2xl p-8 w-full max-w-md">
         {/* Logo */}
+        <Link to="/">
         <div className="flex justify-center mb-4">
           <img
             src="/img/logo.png"
@@ -31,6 +33,7 @@ export default function RegistroVotante() {
             className="w-40 h-40 object-contain"
           />
         </div>
+        </Link>
 
         <h2 className="text-2xl font-bold text-center text-gray-800 mb-">
           Registro Univote

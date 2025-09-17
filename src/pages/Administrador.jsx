@@ -1,51 +1,61 @@
 import React from "react";
 import Navbar_admin from "../components/Navbar_admin";
 import Footer from "../components/Footer";
+import { FaUserFriends, FaVoteYea, FaUserTie } from "react-icons/fa";
 
 const Administrador = () => {
     return (
-        <>
+        <div className="min-h-screen flex flex-col bg-gray-50">
             <Navbar_admin />
-            <main className="max-w-6xl mx-auto p-6">
-                <h1 className="text-3xl font-bold text-center mb-6">Panel de Administrador</h1>
+            <div className="h-24"></div> {/* Espacio para el navbar fijo */}
 
-                <section className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    {/* Primera tarjeta */}
-                    <div className="bg-blue-100 p-6 rounded-lg shadow">
-                        <h2 className="text-xl font-semibold mb-2">Gestión de Votantes</h2>
-                        <p className="text-gray-700">
-                            En la sección de gestión de votantes encontramos el botón “Mostrar
-                            información de todos los votantes”, donde es posible visualizar los datos
-                            generales de nuestros estudiantes, como nombre, identificación y otros
-                            detalles relevantes. Además, contamos con la opción de habilitar o
-                            deshabilitar a cada votante según sea necesario.
+            <main className="flex-grow p-8">
+                <div className="text-center mb-12">
+                    <h1 className="text-5xl font-extrabold text-blue-900 mb-4">
+                        Panel de Administrador 🏛️
+                    </h1>
+                    <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+                        Accede a las herramientas de control y supervisión para gestionar todo el proceso electoral de tu comunidad.
+                    </p>
+                </div>
+
+                <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
+                    {/* Tarjeta de Gestión de Votantes */}
+                    <div className="bg-white p-8 rounded-3xl shadow-xl border border-gray-200 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl flex flex-col">
+                        <div className="flex items-center justify-center bg-blue-100 rounded-full w-16 h-16 mb-6">
+                            <FaUserFriends className="text-blue-600 text-3xl" />
+                        </div>
+                        <h2 className="text-2xl font-bold text-blue-900 mb-2">Gestión de Votantes</h2>
+                        <p className="text-gray-700 flex-grow">
+                            Visualiza la información de todos los estudiantes votantes, incluyendo sus datos generales e identificación. Habilita o deshabilita a cada votante para controlar su participación en las elecciones.
                         </p>
                     </div>
 
-                    {/* Segunda tarjeta */}
-                    <div className="bg-gray-100 p-6 rounded-lg shadow">
-                        <h2 className="text-xl font-semibold mb-2">Gestionar Elecciones</h2>
-                        <p className="text-gray-700">
-                            En Gestionar elecciones contamos con varias opciones: crear una nueva
-                            elección, eliminar elecciones existentes, visualizar las elecciones
-                            activas o pasadas, consultar los resultados, así como iniciar y cerrar
-                            los procesos electorales.
+                    {/* Tarjeta de Gestión de Elecciones */}
+                    <div className="bg-white p-8 rounded-3xl shadow-xl border border-gray-200 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl flex flex-col">
+                        <div className="flex items-center justify-center bg-green-100 rounded-full w-16 h-16 mb-6">
+                            <FaVoteYea className="text-green-600 text-3xl" />
+                        </div>
+                        <h2 className="text-2xl font-bold text-blue-900 mb-2">Gestión de Elecciones</h2>
+                        <p className="text-gray-700 flex-grow">
+                            Crea, elimina, visualiza y gestiona el ciclo completo de los procesos electorales. Consulta los resultados en tiempo real y controla el inicio y cierre de las votaciones.
                         </p>
                     </div>
 
-                    {/* Tercera tarjeta (centrada en segunda fila) */}
-                    <div className="bg-blue-100 p-6 rounded-lg shadow md:col-span-2 md:w-1/2 md:mx-auto">
-                        <h2 className="text-xl font-semibold mb-2">Gestión de Candidatos</h2>
-                        <p className="text-gray-700">
-                            En la sección de Gestionar candidatos podemos consultar la información de
-                            los postulados, revisar los resultados obtenidos por cada uno y, además,
-                            aprobarlos o eliminarlos según corresponda.
+                    {/* Tarjeta de Gestión de Candidatos */}
+                    <div className="bg-white p-8 rounded-3xl shadow-xl border border-gray-200 transform transition-all duration-300 hover:scale-105 hover:shadow-2xl flex flex-col">
+                        <div className="flex items-center justify-center bg-purple-100 rounded-full w-16 h-16 mb-6">
+                            <FaUserTie className="text-purple-600 text-3xl" />
+                        </div>
+                        <h2 className="text-2xl font-bold text-blue-900 mb-2">Gestión de Candidatos</h2>
+                        <p className="text-gray-700 flex-grow">
+                            Consulta la información de los candidatos, revisa las propuestas que han presentado, y aprueba o rechaza sus postulaciones para garantizar un proceso justo y transparente.
                         </p>
                     </div>
                 </section>
-
             </main>
-        </>
+
+        </div>
     );
 };
 

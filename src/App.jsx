@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import NavbarVotante from "./components/NavbarVotante";
 import Navbar from "./components/Navbar";
 import Navbar_admin from "./components/Navbar_admin";
+import NavbarCandidato from "./components/NavbarCandidato";
 import Carrusel from "./components/Carrusel";
 import Administrador from "./pages/Administrador";
 import Gestionar_votantes from "./pages/Gestionar_votantes"
@@ -21,12 +22,21 @@ import Ver_candidatos_adm from "./pages/Ver_candidatos_adm";
 import Resultado_candidatos_admin from "./pages/Resultado_candidatos_admin";
 import Aprobar_Eliminar_cand_admin from "./pages/Aprobar_Eliminar_cand_admin";
 import Mi_perfil_admin from "./pages/Mi_perfil_admin";
-import MiPerfilVotante  from "./pages/MiPerfilVotante";
+import MiPerfilVotante from "./pages/MiPerfilVotante";
 import ResultadosVotante from "./pages/ResultadosVotante";
 import Propuestas from "./pages/Propuestas";
 import Inf_votante from "./pages/Inf_votante";
 import Inf_candidato from "./pages/Inf_candidato";
 import Registro_candidato from "./pages/Registro_candidato";
+import Candidato from "./pages/Candidato";
+import PostularseElecciones from "./pages/PostularseElecciones";
+import ConsultarFunciones from "./pages/ConsultarFunciones";
+import ConsultarCargosCandidato from "./pages/ConsultarCargosCandidato";
+import GestionarPropuestas from "./pages/GestionarPropuestas";
+import CrearPropuesta from "./pages/CrearPropuesta";
+import MiPerfilCandidato from "./pages/MiPerfilCandidato";
+
+
 
 
 
@@ -50,16 +60,24 @@ export default function App() {
           <Route path="/Resultado_elecciones_adm" element={<Resultado_elecciones_adm />} />
           <Route path="/Iniciar_Cerrar_vot_adm" element={<Iniciar_Cerrar_vot_adm />} />
           <Route path="/Ver_candidatos_adm" element={<Ver_candidatos_adm />} />
-          <Route path="/Resultado_candidatos_admin" element={<Resultado_candidatos_admin/>} />
-          <Route path="/Aprobar_Eliminar_cand_admin" element={<Aprobar_Eliminar_cand_admin/>} />
-          <Route path="/Mi_perfil_admin" element={<Mi_perfil_admin/>} />
+          <Route path="/Resultado_candidatos_admin" element={<Resultado_candidatos_admin />} />
+          <Route path="/Aprobar_Eliminar_cand_admin" element={<Aprobar_Eliminar_cand_admin />} />
+          <Route path="/Mi_perfil_admin" element={<Mi_perfil_admin />} />
           <Route path="/MiPerfilVotante" element={<MiPerfilVotante />} />
           <Route path="/ResultadosVotante" element={<ResultadosVotante />} />
           <Route path="/Propuestas/:id" element={<Propuestas />} />
-          <Route path="/Inf_votante" element={<Inf_votante/>} />
-          <Route path="/Inf_candidato" element={<Inf_candidato/>} />
-          <Route path="/Registro_candidato" element={<Registro_candidato/>} />
-          
+          <Route path="/Inf_votante" element={<Inf_votante />} />
+          <Route path="/Inf_candidato" element={<Inf_candidato />} />
+          <Route path="/Registro_candidato" element={<Registro_candidato />} />
+          <Route path="/Candidato" element={<Candidato />} />
+          <Route path="/PostularseElecciones" element={<PostularseElecciones />} />
+          <Route path="/ConsultarFunciones" element={<ConsultarFunciones />} />
+          <Route path="/ConsultarCargosCandidato" element={<ConsultarCargosCandidato />} />
+          <Route path="/GestionarPropuestas" element={<GestionarPropuestas />} />
+          <Route path="/CrearPropuesta" element={<CrearPropuesta />} />
+          <Route path="/MiPerfilCandidato" element={<MiPerfilCandidato />} />
+
+
         </Routes>
       </div>
 

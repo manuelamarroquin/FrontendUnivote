@@ -13,9 +13,15 @@ const Navbar_admin = () => {
   };
 
   return (
-    <nav className="fixed top-0 w-full bg-blue-900 text-white flex items-center justify-between px-5 h-20 z-50 shadow-md">
+   <nav className="fixed top-0 w-full bg-blue-900 text-white flex items-center justify-between px-5 h-24 z-50">
       {/* Logo */}
-      <img src="/img/logo4.png" alt="Logo" className="h-16 w-auto" />
+        <Link to="/Votante">
+      <img
+          src="/public/img/logo-navbar.jpeg"
+          alt="Logo"
+          className="h-24 w-auto"
+        />
+        </Link>
 
       {/* Menú principal */}
       <ul

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
 const carouselImages = [
-  { src: "/img/imagen_de_inicio.png", alt: "Imagen 1" },
-  { src: "/img/carrusel4.png", alt: "Imagen 2" },
+  { src: "/img/carrusel7.jpeg", alt: "Imagen 1" },
+  { src: "/img/Carrusel4.png", alt: "Imagen 2" },
   { src: "/img/carrusel5.png", alt: "Imagen 3" },
 ];
 

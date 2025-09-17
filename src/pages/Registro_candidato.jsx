@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from 'react-router-dom';
 
 export default function Registro_candidato() {
   const [formData, setFormData] = useState({
@@ -9,7 +10,7 @@ export default function Registro_candidato() {
     correo: "",
     contrasena: "",
     estado: "",
-    foto: null, 
+    foto: null,
     eleccion_a_la_que_se_postula: "",
   });
 
@@ -38,14 +39,15 @@ export default function Registro_candidato() {
     <div className="min-h-screen flex items-center justify-center bg-blue-900">
       <div className="bg-white shadow-xl rounded-2xl p-8 w-full max-w-md">
         {/* Logo */}
-        <div className="flex justify-center mb-4">
-          <img
-            src="/img/logo.png"
-            alt="Logo"
-            className="w-40 h-40 object-contain"
-          />
-        </div>
-
+        <Link to="/">
+          <div className="flex justify-center mb-4">
+            <img
+              src="/img/logo.png"
+              alt="Logo"
+              className="w-40 h-40 object-contain"
+            />
+          </div>
+        </Link>
         <h2 className="text-2xl font-bold text-center text-gray-800 mb-6">
           Registro de Candidato
         </h2>
